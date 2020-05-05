@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Master" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"> 
+	<List items="{flights>/Schedule}">
+		<ObjectListItem title="{flights>CARRID}" type="Active">
+			
+		</ObjectListItem>
+	</List>
+</mvc:View>
