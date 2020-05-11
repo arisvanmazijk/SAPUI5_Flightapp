@@ -42,6 +42,38 @@
 		"type": "sap.ui.model.json.JSONModel",
 		"uri": "Flights.json"	  	
 	  }
-	}
+	},
+    "routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "sap.ui.softwaris.flightapp.view",
+		"controlId": "app",
+		"controlAggregation": "pages",
+		"async": true
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "master",
+		  "target": "master"
+		},	  	
+		{
+		  "pattern": "detail/{flightsPath}",
+		  "name": "detail",
+		  "target": "detail"
+		}
+	  ],
+	  "targets": {
+	  	"master": {
+	  	  "viewId": "master",
+	  	  "viewName": "master"
+	  	},
+		"detail": {
+		  "viewId": "detail",
+		  "viewName": "Detail"
+		}
+	  }
+	}	
   }
 }

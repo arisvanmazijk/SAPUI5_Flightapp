@@ -1,6 +1,6 @@
 <mvc:View controllerName="sap.ui.softwaris.flightapp.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
 	<Shell>
-		<SplitApp>
+		<SplitApp id="app">
 			<masterPages>
 				<Page title="{i18n>masterPageTitle}">
 					<content>
@@ -9,7 +9,11 @@
 				</Page>
 			</masterPages>
 			<detailPages>
-				
+				<Page title="{i18n>detailPageTitle}">
+					<content>
+						<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Detail"/>
+					</content>
+				</Page>				
 			</detailPages>
 		</SplitApp>
 	</Shell>

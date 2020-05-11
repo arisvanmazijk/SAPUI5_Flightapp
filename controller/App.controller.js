@@ -1,11 +1,8 @@
 sap.ui.define([
-   "sap/ui/core/mvc/Controller",
-   "sap/m/MessageToast"
-], function (Controller, MessageToast) {
+   "sap/ui/core/mvc/Controller"
+], function (Controller) {
    "use strict";
    return Controller.extend("sap.ui.softwaris.flightapp.controller.App", {
-   	onShowInfo : function () {
-   			MessageToast.show("This is going to be the Flight App");
-   		}
+
    });
 });
