@@ -13,7 +13,7 @@
 					<content>
 						<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Detail"/>
 					</content>
-				</Page>				
+				</Page>
 			</detailPages>
 		</SplitApp>
 	</Shell>
