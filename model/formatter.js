@@ -15,6 +15,35 @@ sap.ui.define([], function () {
 				default:
 					return sAirline;
 			}
+		},
+		distanceUnit: function (sDistid) {
+			var resourceBundle = this.getView().getModel("i18n").getResourceBundle();
+			switch (sDistid) {
+				case "MI":
+					return resourceBundle.getText("miles");
+				case "KM":
+					return resourceBundle.getText("kilometers");
+				default:
+					return sDistid;
+			}
+		},
+		flightType: function (sFlighttype) {
+			var resourceBundle = this.getView().getModel("i18n").getResourceBundle();
+			switch (sFlighttype) {
+				case "X":
+					return resourceBundle.getText("charter");
+				case " ":
+					return resourceBundle.getText("scheduled");
+				default:
+					return sFlighttype;
+			}
+		},
+		flightTime: function (sFlighttime) {
+			var resourceBundle = this.getView().getModel("i18n").getResourceBundle();
+			if (sFlighttime < 60) {
+				return sFlighttime + " minutes";
+			}
+			return (Math.round(sFlighttime / 60)) + " hours";
 		}
 	};
 });

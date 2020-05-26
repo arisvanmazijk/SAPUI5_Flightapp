@@ -1,4 +1,4 @@
-<mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form">
 	<Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
 		<ObjectHeader responsive="true" fullScreenOptimized="true" intro="{ path: 'flights>CARRID', formatter: '.formatter.airlineText' }"
 			title="{flights>CITYFROM} ({flights>AIRPFROM}) to {flights>CITYTO} ({flights>AIRPTO})">
@@ -8,5 +8,19 @@
 				<ObjectAttribute text="{i18n>localTimeText}"/>
 			</attributes>
 		</ObjectHeader>
+		<f:SimpleForm layout="ResponsiveGridLayout">
+			<f:content>
+				<Label text="{i18n>flightTime}"/>
+				<Text text="{ path: 'flights>FLTIME', formatter: '.formatter.flightTime' }"/>
+				<Label text="{i18n>distance}"/>
+				<Text text="{flights>DISTANCE} { path: 'flights>DISTID', formatter: '.formatter.distanceUnit' }"/>
+				<Label text="{i18n>flightType}"/>
+				<Text text="{ path: 'flights>FLTYPE', formatter: '.formatter.flightType' }"/>
+				<Label text="{i18n>period}"/>
+				<Text text="{flights>PERIOD}"/>
+			</f:content>
+				<Label/>
+				<Button text="{i18n>availableFlightsButton}" press=".onPressNavToFlights" />
+		</f:SimpleForm>
 	</Page>
 </mvc:View>
