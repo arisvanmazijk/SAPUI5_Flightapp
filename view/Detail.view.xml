@@ -18,9 +18,9 @@
 				<Text text="{ path: 'flights>FLTYPE', formatter: '.formatter.flightType' }"/>
 				<Label text="{i18n>period}"/>
 				<Text text="{flights>PERIOD}"/>
-			</f:content>
 				<Label/>
-				<Button text="{i18n>availableFlightsButton}" press=".onPressNavToFlights" />
+				<Button text="{i18n>availableFlightsButton}" press=".onPressNavToFlights" width="15em"/>
+			</f:content>
 		</f:SimpleForm>
 	</Page>
 </mvc:View>

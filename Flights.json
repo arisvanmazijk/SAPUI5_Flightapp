@@ -84,6 +84,57 @@
 	  "DISTID": "KM",
 	  "FLTYPE": " ",
 	  "PERIOD": 0
-	}
+	},
+	{
+	  "CARRID": "JL",
+	  "CONNID": "0408",
+	  "COUNTRYFR": "DE",
+	  "CITYFROM": "Frankfurt",
+	  "AIRPFROM": "FRA",
+	  "COUNTRYTO": "JP",
+	  "CITYTO": "Tokyo",
+	  "AIRPTO": "NRT",
+	  "FLTIME": "675",
+	  "DEPTIME": "20:25",
+	  "ARRTIME": "15:40",
+	  "DISTANCE": 9100,
+	  "DISTID": "KM",
+	  "FLTYPE": "X",
+	  "PERIOD": 1
+	},
+	{
+	  "CARRID": "LH",
+	  "CONNID": "0400",
+	  "COUNTRYFR": "DE",
+	  "CITYFROM": "Frankfurt",
+	  "AIRPFROM": "FRA",
+	  "COUNTRYTO": "US",
+	  "CITYTO": "New York",
+	  "AIRPTO": "JFK",
+	  "FLTIME": "444",
+	  "DEPTIME": "10:10",
+	  "ARRTIME": "11:34",
+	  "DISTANCE": 6162,
+	  "DISTID": "KM",
+	  "FLTYPE": " ",
+	  "PERIOD": 0
+	},	
+	{
+	  "CARRID": "LH",
+	  "CONNID": "0401",
+	  "COUNTRYFR": "US",
+	  "CITYFROM": "New York",
+	  "AIRPFROM": "JFK",
+	  "COUNTRYTO": "DE",
+	  "CITYTO": "Frankfurt",
+	  "AIRPTO": "FRA",
+	  "FLTIME": "435",
+	  "DEPTIME": "18:30",
+	  "ARRTIME": "07:45",
+	  "DISTANCE": 6162,
+	  "DISTID": "KM",
+	  "FLTYPE": " ",
+	  "PERIOD": 1
+	}	
   ]
 }

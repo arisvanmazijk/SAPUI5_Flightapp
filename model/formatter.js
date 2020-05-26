@@ -11,7 +11,9 @@ sap.ui.define([], function () {
 				case "DL":
 					return resourceBundle.getText("airlineNameDL");
 				case "JL":
-					return resourceBundle.getText("airlineNameJL");					
+					return resourceBundle.getText("airlineNameJL");	
+				case "LH":
+					return resourceBundle.getText("airlineNameLH");						
 				default:
 					return sAirline;
 			}
