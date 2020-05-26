@@ -1,7 +1,9 @@
 <mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Master" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"> 
-	<List items="{flights>/Schedule}">
-		<ObjectListItem title="{ path: 'flights>CARRID', formatter: '.formatter.airlineText' }" type="Navigation" press="onSelectFlight">
-			<ObjectAttribute text="{flights>CITYFROM} to {flights>CITYTO}" />
-		</ObjectListItem>
-	</List>
+	<Page title="{i18n>masterPageTitle}">
+		<List items="{flights>/Schedule}">
+			<ObjectListItem title="{ path: 'flights>CARRID', formatter: '.formatter.airlineText' }" type="Navigation" press="onSelectFlight">
+				<ObjectAttribute text="{flights>CITYFROM} to {flights>CITYTO}" />
+			</ObjectListItem>
+		</List>
+	</Page>
 </mvc:View>

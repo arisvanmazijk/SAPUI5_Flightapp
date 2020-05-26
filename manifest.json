@@ -61,6 +61,11 @@
 		  "pattern": "detail/{flightsPath}",
 		  "name": "detail",
 		  "target": "detail"
+		},
+		{
+		  "pattern": "landing",
+		  "name": "landing",
+		  "target": "landing"
 		}
 	  ],
 	  "targets": {
@@ -75,7 +80,13 @@
 		  "viewName": "Detail",
 		   "controlAggregation": "detailPages",
 		   "viewLevel": 1
-		}
+		},
+		"landing": {
+		  "viewId": "landing",
+		  "viewName": "Landing",
+		   "controlAggregation": "detailPages",
+		   "viewLevel": 1
+		}		
 	  }
 	}	
   }
