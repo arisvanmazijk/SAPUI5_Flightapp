@@ -19,7 +19,7 @@
 				<Label text="{i18n>period}"/>
 				<Text text="{flights>PERIOD}"/>
 				<Label/>
-				<Button text="{i18n>availableFlightsButton}" press=".onPressNavToFlights" width="15em"/>
+				<Button text="{i18n>availableFlightsButton}" press=".navToFlights" width="15em"/>
 			</f:content>
 		</f:SimpleForm>
 	</Page>

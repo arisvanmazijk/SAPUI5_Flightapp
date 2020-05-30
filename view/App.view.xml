@@ -2,18 +2,10 @@
 	<Shell>
 		<SplitApp id="app">
 			<masterPages>
-				<Page>
-					<content>
-						<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Master"/>
-					</content>
-				</Page>
+				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Master"/>
 			</masterPages>
 			<detailPages>
-				<Page title="{i18n>detailPageTitle}">
-					<content>
-						<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Landing"/>
-					</content>
-				</Page>
+				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Landing"/>
 			</detailPages>
 		</SplitApp>
 	</Shell>

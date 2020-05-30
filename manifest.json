@@ -66,7 +66,12 @@
 		  "pattern": "landing",
 		  "name": "landing",
 		  "target": "landing"
-		}
+		},
+		{
+		  "pattern": "flights",
+		  "name": "flights",
+		  "target": "flights"
+		}		
 	  ],
 	  "targets": {
 	  	"master": {
@@ -84,6 +89,12 @@
 		"landing": {
 		  "viewId": "landing",
 		  "viewName": "Landing",
+		   "controlAggregation": "detailPages",
+		   "viewLevel": 1
+		},
+		"flights": {
+		  "viewId": "flights",
+		  "viewName": "Flights",
 		   "controlAggregation": "detailPages",
 		   "viewLevel": 1
 		}		
