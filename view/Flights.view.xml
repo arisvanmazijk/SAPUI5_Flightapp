@@ -1,7 +1,34 @@
 <mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Flights" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
 	<Page title="{i18n>flightsPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
-		<List>
-
-		</List>
+		<Table items="{flights>/Flights}">
+			<columns>
+				<Column 
+					hAlign="End"
+					minScreenWidth="Small"
+					demandPopin="true"
+					width="7em">
+					<Text text="{i18n>columnDate}"/>
+				</Column>
+				<Column width="7em">
+					<Text text="{i18n>columnPrice}"/>
+				</Column>	
+				<Column 				
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="{i18n>columnPlane}"/>
+				</Column>					
+			</columns>
+			<items>
+				<ColumnListItem
+					type="Navigation"
+					press=".onPress">
+					<cells>
+						<Text text="{flights>FLDATE}"/>
+						<ObjectNumber number="{flights>PRICE}" unit="{flights>CURRENCY}"/>
+						<Text text="{flights>PLANETYPE}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
 	</Page>
 </mvc:View>
