@@ -3,20 +3,44 @@
 		<Table items="{flights>/Flights}">
 			<columns>
 				<Column 
-					hAlign="End"
 					minScreenWidth="Small"
 					demandPopin="true"
-					width="7em">
+					width="20px">
 					<Text text="{i18n>columnDate}"/>
 				</Column>
-				<Column width="7em">
-					<Text text="{i18n>columnPrice}"/>
-				</Column>	
-				<Column 				
+				<Column 
+					width="20px"
 					minScreenWidth="Small"
 					demandPopin="true">
 					<Text text="{i18n>columnPlane}"/>
-				</Column>					
+				</Column>
+				<Column 
+					hAlign="Center"
+					width="30px"
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="{i18n>columnEconomy}"/>
+				</Column>				
+				<Column 
+					width="30px"
+					hAlign="Center"
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="{i18n>columnBusiness}"/>
+				</Column>
+				<Column 
+					width="30px"
+					hAlign="Center"
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="{i18n>columnFirst}"/>
+				</Column>	
+				<Column 
+					width="20px"
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="{i18n>columnPrice}"/>
+				</Column>				
 			</columns>
 			<items>
 				<ColumnListItem
@@ -24,8 +48,11 @@
 					press=".onPress">
 					<cells>
 						<Text text="{flights>FLDATE}"/>
-						<ObjectNumber number="{flights>PRICE}" unit="{flights>CURRENCY}"/>
 						<Text text="{flights>PLANETYPE}"/>
+						<Text text="{= ${flights>SEATSMAX} - ${flights>SEATSOCC} }"/>						
+						<Text text="{= ${flights>SEATSMAX_B} - ${flights>SEATSOCC_B} }"/>
+						<Text text="{= ${flights>SEATSMAX_F} - ${flights>SEATSOCC_F} }"/>
+						<ObjectNumber number="{flights>PRICE}" unit="{flights>CURRENCY}"/>		
 					</cells>
 				</ColumnListItem>
 			</items>

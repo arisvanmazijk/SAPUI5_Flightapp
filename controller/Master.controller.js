@@ -11,7 +11,7 @@ sap.ui.define([
 		},
 		
 		onSelectFlight: function (oEvent) {
-			var oItem = oEvent.getSource();
+			var oItem = oEvent.getParameter("listItem");
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("detail", {
 				flightsPath: window.encodeURIComponent(oItem.getBindingContext("flights").getPath().substr(1))
