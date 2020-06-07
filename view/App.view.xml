@@ -1,11 +1,12 @@
 <mvc:View controllerName="sap.ui.softwaris.flightapp.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
 	<Shell>
-		<SplitApp id="app">
+		<SplitApp id="app" initialDetail="landing">
 			<masterPages>
-				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Master"/>
+				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Master" id="master"/>
 			</masterPages>
 			<detailPages>
-				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Landing"/>
+				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Detail" id="detail"/>				
+				<mvc:XMLView viewName="sap.ui.softwaris.flightapp.view.Landing" id="landing"/>					
 			</detailPages>
 		</SplitApp>
 	</Shell>

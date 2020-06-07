@@ -56,7 +56,7 @@
 		  "pattern": "",
 		  "name": "master",
 		  "target": "master"
-		},	  	
+		},	 
 		{
 		  "pattern": "detail/{flightsPath}",
 		  "name": "detail",

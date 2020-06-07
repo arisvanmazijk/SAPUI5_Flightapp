@@ -40,19 +40,22 @@
 					minScreenWidth="Small"
 					demandPopin="true">
 					<Text text="{i18n>columnPrice}"/>
-				</Column>				
+				</Column>
+				<Column 
+					width="20px"
+					minScreenWidth="Small"
+					demandPopin="true"/>
 			</columns>
 			<items>
-				<ColumnListItem
-					type="Navigation"
-					press=".onPress">
+				<ColumnListItem>
 					<cells>
 						<Text text="{flights>FLDATE}"/>
 						<Text text="{flights>PLANETYPE}"/>
 						<Text text="{= ${flights>SEATSMAX} - ${flights>SEATSOCC} }"/>						
 						<Text text="{= ${flights>SEATSMAX_B} - ${flights>SEATSOCC_B} }"/>
 						<Text text="{= ${flights>SEATSMAX_F} - ${flights>SEATSOCC_F} }"/>
-						<ObjectNumber number="{flights>PRICE}" unit="{flights>CURRENCY}"/>		
+						<ObjectNumber number="{flights>PRICE}" unit="{flights>CURRENCY}"/>	
+						<Button icon="sap-icon://flight" text="Book"/>
 					</cells>
 				</ColumnListItem>
 			</items>
