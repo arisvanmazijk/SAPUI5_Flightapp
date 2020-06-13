@@ -71,6 +71,11 @@
 		  "pattern": "flights",
 		  "name": "flights",
 		  "target": "flights"
+		},
+		{
+		  "pattern": "booking",
+		  "name": "booking",
+		  "target": "booking"
 		}		
 	  ],
 	  "targets": {
@@ -95,6 +100,12 @@
 		"flights": {
 		  "viewId": "flights",
 		  "viewName": "Flights",
+		   "controlAggregation": "detailPages",
+		   "viewLevel": 1
+		},	
+		"booking": {
+		  "viewId": "booking",
+		  "viewName": "Booking",
 		   "controlAggregation": "detailPages",
 		   "viewLevel": 1
 		}		

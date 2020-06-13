@@ -4,7 +4,7 @@ sap.ui.define([
    "sap/ui/core/routing/History"
 ], function (Controller, UIComponent, History) {
    "use strict";
-   return Controller.extend("sap.ui.softwaris.flightapp.controller.Detail", {
+   return Controller.extend("sap.ui.softwaris.flightapp.controller.Booking", {
 		onInit : function () {
 
 		},
@@ -17,13 +17,12 @@ sap.ui.define([
 					window.history.go(-1);
 				} else {
 					var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-					oRouter.navTo("landing");
+					oRouter.navTo("flights");
 				}
-			},
-			
-		navToBooking: function () {
-				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-				oRouter.navTo("booking");
-		}			
-	});
+		},
+		
+		bookFlight: function () {
+
+		}
+   });
 });

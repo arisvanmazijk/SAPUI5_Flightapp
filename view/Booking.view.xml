@@ -1,0 +1,18 @@
+<mvc:View controllerName="sap.ui.softwaris.flightapp.controller.Booking" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form">
+	<Page title="{i18n>bookingPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+		<f:SimpleForm layout="ResponsiveGridLayout">
+			<f:content>
+				<Label text="{i18n>flightTime}"/>
+				<Text text="{ path: 'flights>FLTIME', formatter: '.formatter.flightTime' }"/>
+				<Label text="{i18n>distance}"/>
+				<Text text="{flights>DISTANCE} { path: 'flights>DISTID', formatter: '.formatter.distanceUnit' }"/>
+				<Label text="{i18n>flightType}"/>
+				<Text text="{ path: 'flights>FLTYPE', formatter: '.formatter.flightType' }"/>
+				<Label text="{i18n>period}"/>
+				<Text text="{flights>PERIOD}"/>
+				<Label/>
+				<Button text="{i18n>bookFlightButton}" press=".bookFlight" width="15em"/>
+			</f:content>
+		</f:SimpleForm>
+	</Page>
+</mvc:View>
