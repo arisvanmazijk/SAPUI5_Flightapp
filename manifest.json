@@ -41,7 +41,11 @@
 	  "flights": {
 		"type": "sap.ui.model.json.JSONModel",
 		"uri": "Flights.json"	  	
-	  }
+	  },
+	  "countries": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "Countries.json"	  	
+	  }	  
 	},
     "routing": {
 	  "config": {
