@@ -3,33 +3,33 @@
 	<Page title="{i18n>bookingPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
 		<f:SimpleForm layout="ResponsiveGridLayout">
 			<f:content>
-				<Label text="{i18n>bookTitle}"/>
-				<RadioButtonGroup columns="2">
+				<Label text="{i18n>bookTitle}" required="true"/>
+				<RadioButtonGroup columns="2" selectedIndex="-1">
 					<RadioButton text="{i18n>bookTitleMale}"/>
 					<RadioButton text="{i18n>bookTitleFemale}"/>
 				</RadioButtonGroup>
-				<Label text="{i18n>bookFirstName}"/>
+				<Label text="{i18n>bookFirstName}" required="true"/>
 				<Input width="50%"/>
-				<Label text="{i18n>bookLastName}"/>
+				<Label text="{i18n>bookLastName}" required="true"/>
 				<Input width="50%"/>
 				<Label text="{i18n>bookSpecialAssistance}"/>
-				<RadioButtonGroup columns="2">
+				<RadioButtonGroup columns="2" selectedIndex="1">
 					<RadioButton text="{i18n>bookYes}"/>
 					<RadioButton text="{i18n>bookNo}"/>
 				</RadioButtonGroup>				
-				<Label text="{i18n>bookAddress}"/>
+				<Label text="{i18n>bookAddress}" required="true"/>
 				<Input width="50%"/>
-				<Label text="{i18n>bookPostalCode}"/>
+				<Label text="{i18n>bookPostalCode}" required="true"/>
 				<Input width="50%"/>
-				<Label text="{i18n>bookCity}"/>
+				<Label text="{i18n>bookCity}" required="true"/>
 				<Input width="50%"/>
-				<Label text="{i18n>bookCountryCode}"/>
-				<Select width="50%" items="{countries>/Country}" >
+				<Label text="{i18n>bookCountryCode}" required="true"/>
+				<Select width="50%" items="{countries>/Country}">
 					<core:Item text="{countries>Name} ({countries>Prefix})"/>
 				</Select>
-				<Label text="{i18n>bookPhone}"/>
-				<Input width="50%"/>
-				<Label text="{i18n>bookEmail}"/>
+				<Label text="{i18n>bookPhone}" required="true"/>
+				<Input width="50%" placeholder="e.g. 651659127"/>
+				<Label text="{i18n>bookEmail}" required="true"/>
 				<Input width="50%"/>				
 				<Label/>
 				<Button text="{i18n>bookFlightButton}" press=".bookFlight" width="15em"/>

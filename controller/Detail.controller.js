@@ -13,8 +13,8 @@ sap.ui.define([
 		
 		_onObjectMatched: function (oEvent) {
 			this.getView().bindElement({
-				path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").flightsPath),
-				model: "flights"
+				path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").schedulePath),
+				model: "schedule"
 			});
 		},
 		
@@ -24,6 +24,8 @@ sap.ui.define([
 		},
 		
 		navToFlights: function () {
+				var carrid = this.getView().getBindingContext("schedule").getObject("CARRID");
+				var connid = this.getView().getBindingContext("schedule").getObject("CONNID");
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 				oRouter.navTo("flights");
 		}

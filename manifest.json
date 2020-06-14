@@ -45,7 +45,11 @@
 	  "countries": {
 		"type": "sap.ui.model.json.JSONModel",
 		"uri": "Countries.json"	  	
-	  }	  
+	  },
+	  "schedule": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "Schedule.json"	  	
+	  }	  	  
 	},
     "routing": {
 	  "config": {
@@ -62,7 +66,7 @@
 		  "target": "master"
 		},	 
 		{
-		  "pattern": "detail/{flightsPath}",
+		  "pattern": "detail/{schedulePath}",
 		  "name": "detail",
 		  "target": "detail"
 		},
