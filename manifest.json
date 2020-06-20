@@ -76,7 +76,7 @@
 		  "target": "landing"
 		},
 		{
-		  "pattern": "flights",
+		  "pattern": "flights/{carrid}/{connid}",
 		  "name": "flights",
 		  "target": "flights"
 		},
