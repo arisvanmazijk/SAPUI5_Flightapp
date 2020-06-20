@@ -8,10 +8,10 @@
 	  "CURRENCY": "USD",
 	  "PLANETYPE": "747-400",
 	  "SEATSMAX": "385",
-	  "SEATSOCC": "336",
+	  "SEATSOCC": "385",
 	  "PAYMENTSUM": "192.315,29",
 	  "SEATSMAX_B": "31",
-	  "SEATSOCC_B": "28",
+	  "SEATSOCC_B": "31",
 	  "SEATSMAX_F": 21,
 	  "SEATSOCC_F": "21"
   	},
