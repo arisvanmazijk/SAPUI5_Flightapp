@@ -40,15 +40,15 @@
 	  },
 	  "flights": {
 		"type": "sap.ui.model.json.JSONModel",
-		"uri": "Flights.json"	  	
+		"uri": "./data/Flights.json"	  	
 	  },
 	  "countries": {
 		"type": "sap.ui.model.json.JSONModel",
-		"uri": "Countries.json"	  	
+		"uri": "./data/Countries.json"	  	
 	  },
 	  "schedule": {
 		"type": "sap.ui.model.json.JSONModel",
-		"uri": "Schedule.json"	  	
+		"uri": "./data/Schedule.json"	  	
 	  }	  	  
 	},
     "routing": {

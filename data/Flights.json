@@ -74,6 +74,51 @@
 	  "SEATSOCC_B": "20",
 	  "SEATSMAX_F": 10,
 	  "SEATSOCC_F": "10"
-  	}    	
+  	},
+  	{
+	  "CARRID": "AZ",
+	  "CONNID": "0555",
+	  "FLDATE": "23.03.2011",
+	  "PRICE": "185,00",
+	  "CURRENCY": "EUR",
+	  "PLANETYPE": "A310-300",
+	  "SEATSMAX": "280",
+	  "SEATSOCC": "235",
+	  "PAYMENTSUM": "58.965,05",
+	  "SEATSMAX_B": "22",
+	  "SEATSOCC_B": "22",
+	  "SEATSMAX_F": 10,
+	  "SEATSOCC_F": "10"
+  	},
+   	{
+	  "CARRID": "AZ",
+	  "CONNID": "0789",
+	  "FLDATE": "03.11.2011",
+	  "PRICE": "1030,00",
+	  "CURRENCY": "EUR",
+	  "PLANETYPE": "A319",
+	  "SEATSMAX": "220",
+	  "SEATSOCC": "171",
+	  "PAYMENTSUM": "264.050,80",
+	  "SEATSMAX_B": "22",
+	  "SEATSOCC_B": "20",
+	  "SEATSMAX_F": 10,
+	  "SEATSOCC_F": "10"
+  	},
+   	{
+	  "CARRID": "AZ",
+	  "CONNID": "0789",
+	  "FLDATE": "12.01.2011",
+	  "PRICE": "1030,00",
+	  "CURRENCY": "EUR",
+	  "PLANETYPE": "A319",
+	  "SEATSMAX": "220",
+	  "SEATSOCC": "177",
+	  "PAYMENTSUM": "271.580,10",
+	  "SEATSMAX_B": "22",
+	  "SEATSOCC_B": "21",
+	  "SEATSMAX_F": 10,
+	  "SEATSOCC_F": "10"
+  	}  	
   ]
 }
