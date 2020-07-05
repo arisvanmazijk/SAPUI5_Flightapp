@@ -44,7 +44,9 @@ sap.ui.define([
 				var oItem = oEvent.getSource().getBindingContext("flights");
 				if (this._validateSeats(oItem) === true) {
 					var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-					oRouter.navTo("booking");
+					oRouter.navTo("seat", {
+						flight: window.encodeURIComponent(oItem.getPath().substr(1))
+					});
 				} else {
 					var oResourceBundle = this.getView().getModel("i18n").getResourceBundle();
 					MessageToast.show(oResourceBundle.getText("messageToastText"));
@@ -55,6 +57,11 @@ sap.ui.define([
 			var economy = oItem.getObject("SEATSMAX") - oItem.getObject("SEATSOCC");
 			var business = oItem.getObject("SEATSMAX_B") - oItem.getObject("SEATSOCC_B");
 			var first = oItem.getObject("SEATSMAX_F") - oItem.getObject("SEATSOCC_F");
+			
+			var oModel = this.getView().getModel("clientData");
+			oModel.setProperty("/SeatsEconomy", economy);
+			oModel.setProperty("/SeatsBusiness", business);
+			oModel.setProperty("/SeatsFirst", first);
 			
 			if (economy === 0 && business === 0 && first === 0) {
 				return false;

@@ -21,7 +21,7 @@ sap.ui.define([
 				}
 		},
 		
-		bookFlight: function () {
+		makeReservation: function () {
 
 		}
    });

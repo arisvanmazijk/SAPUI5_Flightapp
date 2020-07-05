@@ -32,7 +32,7 @@
 				<Label text="{i18n>bookEmail}" required="true"/>
 				<Input width="50%"/>				
 				<Label/>
-				<Button text="{i18n>bookFlightButton}" press=".bookFlight" width="15em"/>
+				<Button text="{i18n>bookFlightButton}" press=".makeReservation" width="15em"/>
 			</f:content>
 		</f:SimpleForm>
 	</Page>
