@@ -40,7 +40,7 @@ sap.ui.define([
 				}
 			},
 			
-		navToBooking: function (oEvent) {
+		navToSeats: function (oEvent) {
 				var oItem = oEvent.getSource().getBindingContext("flights");
 				if (this._validateSeats(oItem) === true) {
 					var oRouter = sap.ui.core.UIComponent.getRouterFor(this);

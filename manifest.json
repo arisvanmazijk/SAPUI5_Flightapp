@@ -53,7 +53,11 @@
 	  "clientData": {
 		"type": "sap.ui.model.json.JSONModel",
 		"uri": "./data/ClientData.json"	  	
-	  }	  
+	  },
+	  "seats": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "./data/Seats.json"	  	
+	  }	  	  
 	},
     "routing": {
 	  "config": {

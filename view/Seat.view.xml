@@ -14,6 +14,13 @@
 				<Label text="{i18n>seatPrice}"/>
 				<Input id="seatPriceField" width="50%" enabled="false"/>
 				<Label/>
+				<Image src="https://www.vietnamairlines.com/~/media/ContentImage/Our-fleet/Cabin/B787-1.png"
+				height="85%" width="85%" class="sapUiLargeMargin"/>
+				<Label text="{i18n>seatSelectSeat}"/>
+				<ComboBox width="30%" items="{path: 'seats>/Seats', sorter: {path: 'Text'}}">
+				<core:Item key="{seats>Key}" text="{seats>Text}" />
+				</ComboBox>
+				<Label/>
 				<Button text="{i18n>bookSeatButton}" press=".saveAndNavToBooking" width="15em"/>
 			</f:content>
 		</f:SimpleForm>
